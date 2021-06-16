@@ -6,36 +6,75 @@
   <title>HTML Milestones</title>
   <link rel="stylesheet" href="main.css">
 </head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: middle; }
+.item5 { grid-area: right; }
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'menu main main middle middle right right '
+    'menu main main middle middle right right'
+    'footer footer footer footer footer footer footer';
+  
+    grid-gap: 20px;
+  background-color: rgb(159, 211, 194);
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 50px 10px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">HTML STUDY GUIDE</div>
+  <div class="item2">Topics Covered
+  <ol>
+    <li> <a href="development.html">Development Environment</a></li>
+    <li> <a href="fundamentals.html">HTML Fundamentals</a></li>
+    <li> <a href="css.html">Intro to CSS</a></li>
+  </ol>
+</div>
+  <div class="item3">Development Environment
+    <ol>
+      <li>Using Command Line</li>
+      <li>Editing and Viewing</li>
+      <li>Publishing HTML</li> 
+    </ol>
+  </div>  
+  <div class="item4">HTML Fundamentals
+    <ol>
+      <li>Understanding Basic Structure and the Anatomy of an HTML Tag</li>
+      <li>Creating Basic Tags, Lists, and Tables</li>
+      <li>Inserting Multimedia</li>
+    </ol>
+  </div>
+  <div class="item5">CSS
+    <ol>
+      <li>Common CSS Properties</li>
+      <li>Identifying CSS</li>
+      <li>Styling a Page</li>
+    </ol>
+  </div>
+  <div class="item6">Useful Resources</div>
+</div>
+
+</body>
+</html>
+
 <body>
   <div id="page">
-    <main>
-      <h1>HTML Milestones!</h1>
-
-      <p>
-        Welcome to the <em>HTML Milestones</em>. See <a href="https://github.com/jfarmer/milestones-html#readme">the README</a> for how to get started.
-      </p>
-
-      <p>
-        <strong>Remember</strong>: the goal is to write pages that will serve as a useful reference/tutorial for your classmates, for friends or family who want to pick up some HTML, and your future self.
-      </p>
-
-      <p>
-        The code for this page lives in <code>index.html</code>. There are two ways to see its contents:
-      </p>
-      <ol>
-        <li>Open <code>index.html</code> in VS Code or another editor</li>
-        <li>Right-click anywhere on this page and select <em>View Source</em></li>
-      </ol>
-
-      <h2>Add Some Links, Why Don't You?</h2>
-
-      <p>
-        If you want, edit this page to include links to the other HTML documents you create. We added a simple <a href="second-page.html">second page</a> to show you how to link from one HTML document to another using the <a href="https://html.com/anchors-links/">anchor tag</a>.
-      </p>
-      <p>
-        View this page's source code (with *View Source*) to see how it works. Go get 'em!
-      </p>
-    </main>
+    
   </div>
 </body>
 </html>
