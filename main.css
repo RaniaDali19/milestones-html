@@ -3,8 +3,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   line-height: 1.5;
-
-  background-color: rgb(159, 211, 194);
+  background-color: #9fd3c2;
 }
 
 /* Select all h1, h2, ..., h6 tags */
@@ -26,6 +25,8 @@ pre {
 
 pre code {
   white-space: pre-line;
+} 
+
 }
 
 .item 1{
